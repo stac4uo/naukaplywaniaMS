@@ -13,12 +13,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="flex flex-col items-center gap-10">
-    <header
-      class="w-[100vw] overflow-hidden h-24 my-4 flex items-center justify-between"
+  <body class="flex flex-col items-center">
+    <div
+      id="mobileMenu"
+      class="h-[100vh] w-full bg-slate-100 flex flex-col items-center p-5 hidden"
     >
-      <img src="./img/logo.webp" alt="logo firmy" class="mx-4 h-[90%] w-auto" />
-      <ul class="mx-4 flex gap-4">
+      <img
+        id="closeIcon"
+        src="./img/delete.png"
+        alt="ikona zamkniecia"
+        class="w-[30px] h-[30px] self-end"
+      />
+      <ul class="h-[50%] mx-4 flex flex-col gap-8 text-lg">
         <li>O nas</li>
         <li>Oferta</li>
         <li>Grafik Zajęć</li>
@@ -27,200 +33,306 @@
         <li>Blog</li>
         <li>Kontakt</li>
       </ul>
-    </header>
+    </div>
 
-    <section
-      class="h-[60vh] w-full bg-[url('./img/pooldark.jpg')] bg-fixed bg-cover bg-center bg-no-repeat flex flex-col gap-6 items-center justify-center"
-    >
-      <h1 class="text-white text-3xl text-center">
-        <b>Człowiek potrafi pływać</b>
-      </h1>
-      <h2 class="text-white text-2xl font-semibold text-center">
-        Rewolucyjna metoda, która w naturalny sposób rozwija umiejętność
-        pływania u dzieci
-      </h2>
-      <button class="ctaButton">Zapisz dziecko na zajecia</button>
-    </section>
+    <main class="flex flex-col items-center gap-14">
+      <header
+        class="w-[100vw] overflow-hidden h-24 my-4 flex items-center justify-around"
+      >
+        <img
+          src="./img/logo.webp"
+          alt="logo firmy"
+          class="mx-4 h-[90%] w-auto"
+        />
+        <img
+          id="burgerIcon"
+          src="./img/burger-bar.png"
+          alt="icona menu strony"
+          class="w-[40px] h-[40px]"
+        />
+      </header>
 
-    <section class="w-full mx-auto flex flex-col">
-      <h3 class="">Nasza Metoda</h3>
-      <p class="text-lg self-start p-5">
-        Metoda została stworzona z
-        <span class="text-xl text-blue-500 font-semibold">
-          myślą o dzieciach i ich naturalnych zachowaniach w wodzie...</span
-        >
-        <br /><br />
-        Opiera się na współczesnej wiedzy z zakresu psychologii dziecięcej oraz
-        na wieloletnim doświadczeniu pracy z dziećmi w wodzie. <br /><br />
-        Suma doświadczeń w pracy z dziećmi, wieloletnich treningów i obserwacji
-        pływaków oraz pracy trenerskiej pozwoliła stwierdzić, że pływanie jest
-        instynktowną umiejętnością, którą człowiek otrzymał od natury. <br />
-        <span class="text-stone-500 font-serif"
-          >Tradycyjna metodyka nauki pływania przekształciła tę naturalną
-          umiejętność w długi i żmudny proces, który nie zawsze kończy się
-          sukcesem.
-        </span>
-        <br />
-        Nasza metoda, która w naturalny sposób odblokowuje umiejętność pływania
-        u człowieka. Najlepiej sprawdza się w pracy z dziećmi, ale można ją
-        również stosować podczas szkolenia dorosłych.
-      </p>
-      <div class="relative w-full h-[400px]">
-        <div
-          class="w-56 h-56 bg-[url('./img/dzieckoBoy.jfif')] bg-contain rounded-xl absolute top-0 left-12"
-        ></div>
-        <div
-          class="w-56 h-56 bg-[url('./img/dzieckoGirl.jfif')] bg-contain rounded-xl absolute top-40 right-10"
-        ></div>
-      </div>
-    </section>
+      <section
+        class="h-[60vh] w-full bg-[url('./img/bubbles.jpg')] bg-fixed bg-cover bg-left-bottom bg-no-repeat flex flex-col gap-6 items-center justify-center"
+      >
+        <h1 class="text-white text-3xl text-center">
+          <b>Człowiek potrafi pływać</b>
+        </h1>
+        <h2 class="text-white text-2xl font-semibold text-center">
+          Rewolucyjna metoda, która w naturalny sposób rozwija umiejętność
+          pływania u dzieci
+        </h2>
+        <button class="ctaButton">Zapisz dziecko na zajecia</button>
+      </section>
 
-    <section class="flex flex-col justify-center items-center gap-8">
-      <h3 class="">podstawy</h3>
-      <p class="">Trzy kluczowe elementy metody to:</p>
+      <section class="w-full mx-auto flex flex-col">
+        <h3 class="">Nasza Metoda</h3>
+        <p class="text-lg self-start p-5">
+          Metoda została stworzona z
+          <span class="text-xl text-blue-500 font-semibold">
+            myślą o dzieciach i ich naturalnych zachowaniach w wodzie...</span
+          >
+          <br /><br />
+          Opiera się na współczesnej wiedzy z zakresu psychologii dziecięcej
+          oraz na wieloletnim doświadczeniu pracy z dziećmi w wodzie.
+          <br /><br />
+          Suma doświadczeń w pracy z dziećmi, wieloletnich treningów i
+          obserwacji pływaków oraz pracy trenerskiej pozwoliła stwierdzić, że
+          pływanie jest instynktowną umiejętnością, którą człowiek otrzymał od
+          natury. <br />
+          <span class="text-stone-500 font-serif"
+            >Tradycyjna metodyka nauki pływania przekształciła tę naturalną
+            umiejętność w długi i żmudny proces, który nie zawsze kończy się
+            sukcesem.
+          </span>
+          <br />
+          Nasza metoda, która w naturalny sposób odblokowuje umiejętność
+          pływania u człowieka. Najlepiej sprawdza się w pracy z dziećmi, ale
+          można ją również stosować podczas szkolenia dorosłych.
+        </p>
+        <div class="relative w-full h-[400px]">
+          <div
+            class="w-56 h-56 bg-[url('./img/dzieckoBoy.jfif')] bg-contain rounded-xl absolute top-0 left-12"
+          ></div>
+          <div
+            class="w-56 h-56 bg-[url('./img/dzieckoGirl.jfif')] bg-contain rounded-xl absolute top-40 right-10"
+          ></div>
+        </div>
+      </section>
 
-      <hgroup>
+      <section class="flex flex-col justify-center items-center gap-8 darker">
+        <h3 class="">podstawy</h3>
+        <p class="">Trzy kluczowe elementy metody to:</p>
+
         <hgroup>
-          <h4>Mniej stresu</h4>
+          <hgroup>
+            <h4>Mniej stresu</h4>
+            <p>
+              Stres związany z pierwszym kontaktem z wodą jest głównym
+              czynnikiem blokującym naukę pływania.
+            </p>
+          </hgroup>
+          <h4>Czucie wody</h4>
           <p>
-            Stres związany z pierwszym kontaktem z wodą jest głównym czynnikiem
-            blokującym naukę pływania.
+            Poczucie chwytu wody dłońmi i stopami jest fundamentalne dla
+            efektywnego poruszania się w wodzie.
           </p>
         </hgroup>
-        <h4>Czucie wody</h4>
-        <p>
-          Poczucie chwytu wody dłońmi i stopami jest fundamentalne dla
-          efektywnego poruszania się w wodzie.
+
+        <hgroup>
+          <h4>Ułożenie na wodzie</h4>
+          <p>
+            Przyjęcie optymalnej pozycji dla maksymalnego wyporu wody jest
+            kluczowe dla swobodnego unoszenia się na powierzchni.
+          </p>
+        </hgroup>
+      </section>
+      <h2 class="w-[90vw] text-center text-lg">
+        Oprócz samego odblokowania umiejętności pływania,
+        <span class="text-cyan-600 font-semibold"
+          >metoda sprawia że ruchy człowieka w wodzie stają się wyjątkowo
+          efektywne.</span
+        >
+      </h2>
+
+      <section class="w-[80vw] flex flex-col items-center gap-8">
+        <hgroup class="w-full mx-auto">
+          <h3>Zapisz swoje dziecko na szkolenie już dziś</h3>
+          <h3 class="text-3xl">aby jutro mogło pływać!</h3>
+        </hgroup>
+
+        <p class="mx-auto">
+          <span class="text-cyan-900 font-semibold">
+            Pływanie NIE jest umiejętnością elitarną, dostępną tylko dla
+            wybranych.</span
+          >
+          Każdy człowiek ma to w sobie. Im wcześniej dziecko odkryje swoje
+          zdolności, tym łatwiej będzie je rozwijać.
         </p>
-      </hgroup>
 
-      <hgroup>
-        <h4>Ułożenie na wodzie</h4>
-        <p>
-          Przyjęcie optymalnej pozycji dla maksymalnego wyporu wody jest
-          kluczowe dla swobodnego unoszenia się na powierzchni.
-        </p>
-      </hgroup>
-    </section>
-    <h2 class="w-[90vw] text-center text-lg">
-      Oprócz samego odblokowania umiejętności pływania,
-      <span class="text-cyan-600 font-semibold"
-        >metoda sprawia że ruchy człowieka w wodzie stają się wyjątkowo
-        efektywne.</span
-      >
-    </h2>
-
-    <section class="w-[80vw] flex flex-col items-center gap-8">
-      <hgroup class="w-full mx-auto">
-        <h3>Zapisz swoje dziecko na szkolenie już dziś</h3>
-        <h3>aby jutro mogło pływać!</h3>
-      </hgroup>
-
-      <p class="mx-auto">
-        <span class="text-cyan-900 font-semibold">
-          Pływanie NIE jest umiejętnością elitarną, dostępną tylko dla
-          wybranych.</span
+        <article
+          class="w-[80vw] flex flex-col items-center gap-8 p-12 shadow-xl shadow-cyan-900 rounded-lg"
         >
-        Każdy człowiek ma to w sobie. Im wcześniej dziecko odkryje swoje
-        zdolności, tym łatwiej będzie je rozwijać.
-      </p>
+          <h3 class="text-3xl">Pełny kurs pływania</h3>
+          <div class="flex items-start gap-4 w-full">
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L8.70711 18.7071C8.51957 18.8946 8.26522 19 8 19C7.73478 19 7.48043 18.8946 7.29289 18.7071L3.29289 14.7071C2.90237 14.3166 2.90237 13.6834 3.29289 13.2929C3.68342 12.9024 4.31658 12.9024 4.70711 13.2929L8 16.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z"
+                fill="black"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p>Maksymalnie 5 osób w grupie</p>
+          </div>
 
-      <article class="w-[80vw] flex flex-col items-center gap-8 p-12  shadow-md rounded-lg">
-        <h3 class="text-3xl">Pełny kurs pływania</h3>
-        <div class=" flex items-start gap-4 w-full">
-          <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L8.70711 18.7071C8.51957 18.8946 8.26522 19 8 19C7.73478 19 7.48043 18.8946 7.29289 18.7071L3.29289 14.7071C2.90237 14.3166 2.90237 13.6834 3.29289 13.2929C3.68342 12.9024 4.31658 12.9024 4.70711 13.2929L8 16.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z" fill="black" fill-rule="evenodd"/></svg>
-        <p>Maksymalnie 5 osób w grupie</p>
-      </div>
+          <div class="flex items-start gap-4 w-full">
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L8.70711 18.7071C8.51957 18.8946 8.26522 19 8 19C7.73478 19 7.48043 18.8946 7.29289 18.7071L3.29289 14.7071C2.90237 14.3166 2.90237 13.6834 3.29289 13.2929C3.68342 12.9024 4.31658 12.9024 4.70711 13.2929L8 16.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z"
+                fill="black"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p>12 zajęć co 2-3 dni</p>
+          </div>
+          <div class="flex items-start gap-4 w-full">
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L8.70711 18.7071C8.51957 18.8946 8.26522 19 8 19C7.73478 19 7.48043 18.8946 7.29289 18.7071L3.29289 14.7071C2.90237 14.3166 2.90237 13.6834 3.29289 13.2929C3.68342 12.9024 4.31658 12.9024 4.70711 13.2929L8 16.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z"
+                fill="black"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p>Certyfikat pływacki</p>
+          </div>
+          <div class="flex items-start gap-4 w-full">
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L8.70711 18.7071C8.51957 18.8946 8.26522 19 8 19C7.73478 19 7.48043 18.8946 7.29289 18.7071L3.29289 14.7071C2.90237 14.3166 2.90237 13.6834 3.29289 13.2929C3.68342 12.9024 4.31658 12.9024 4.70711 13.2929L8 16.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z"
+                fill="black"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p>... umiejętność pływania na całe życie</p>
+          </div>
+        </article>
+      </section>
 
-      <div class="flex items-start gap-4 w-full">
-        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L8.70711 18.7071C8.51957 18.8946 8.26522 19 8 19C7.73478 19 7.48043 18.8946 7.29289 18.7071L3.29289 14.7071C2.90237 14.3166 2.90237 13.6834 3.29289 13.2929C3.68342 12.9024 4.31658 12.9024 4.70711 13.2929L8 16.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z" fill="black" fill-rule="evenodd"/></svg>
-        <p>12 zajęć co 2-3 dni</p>
-      </div>
-      <div class="flex items-start gap-4 w-full">
-        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L8.70711 18.7071C8.51957 18.8946 8.26522 19 8 19C7.73478 19 7.48043 18.8946 7.29289 18.7071L3.29289 14.7071C2.90237 14.3166 2.90237 13.6834 3.29289 13.2929C3.68342 12.9024 4.31658 12.9024 4.70711 13.2929L8 16.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z" fill="black" fill-rule="evenodd"/></svg>
-        <p>Certyfikat pływacki</p>
-      </div>
-      <div class="flex items-start gap-4 w-full">
-        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M20.7071 5.29289C21.0976 5.68342 21.0976 6.31658 20.7071 6.70711L8.70711 18.7071C8.51957 18.8946 8.26522 19 8 19C7.73478 19 7.48043 18.8946 7.29289 18.7071L3.29289 14.7071C2.90237 14.3166 2.90237 13.6834 3.29289 13.2929C3.68342 12.9024 4.31658 12.9024 4.70711 13.2929L8 16.5858L19.2929 5.29289C19.6834 4.90237 20.3166 4.90237 20.7071 5.29289Z" fill="black" fill-rule="evenodd"/></svg>
-        <p>... umiejętność pływania na całe życie</p>
-      </div>
-      </article>
+      <section>
+        <div class="max-w-4xl mx-auto p-6">
+          <h3 class="">Często zadawane pytania</h3>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+              <div
+                class="w-full flex justify-between items-center py-3 px-4 bg-gray-200 hover:bg-gray-300 rounded-lg cursor-pointer"
+                onclick="toggleAnswer(this)"
+              >
+                <span class="font-semibold text-gray-700"
+                  >Po jakim czasie pracy dziecko samodzielnie pływa na głębokim
+                  basenie?</span
+                >
+                <span class="text-gray-500">+</span>
+              </div>
+              <div class="mt-2 hidden text-gray-600">
+                <p>
+                  Każde dziecko jest wyjątkowe i różni się pod względem
+                  wrażliwości i percepcji, dlatego trudno jest podać
+                  jednoznaczny czas nauki. <br /><br />Jednak nasze
+                  doświadczenie pokazuje, że większość dzieci, które
+                  uczestniczyły w kursach, po 10 zajęciach samodzielnie i
+                  swobodnie pływały na głębokiej wodzie na plecach oraz na
+                  brzuchu z głową pod wodą. Dodatkowo, dzieci potrafiły skakać
+                  do głębokiej wody na nogi z brzegu lub słupka i bezpiecznie po
+                  tym płynąć.
+                </p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div
+                class="w-full flex justify-between items-center py-3 px-4 bg-gray-200 hover:bg-gray-300 rounded-lg cursor-pointer"
+                onclick="toggleAnswer(this)"
+              >
+                <span class="font-semibold text-gray-700"
+                  >Jak długo trwa kurs
+                </span>
+                <span class="text-gray-500">+</span>
+              </div>
+              <div class="mt-2 hidden text-gray-600">
+                <p>
+                  Kurs powinien obejmować 12 zajęć, odbywających się co 2-3 dni,
+                  co daje około miesiąca.
+                </p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div
+                class="w-full flex justify-between items-center py-3 px-4 bg-gray-200 hover:bg-gray-300 rounded-lg cursor-pointer"
+                onclick="toggleAnswer(this)"
+              >
+                <span class="font-semibold text-gray-700"
+                  >Ile lat powinny mieć dzieci biorące udział w kursie?</span
+                >
+                <span class="text-gray-500">+</span>
+              </div>
+              <div class="mt-2 hidden text-gray-600">
+                <p>
+                  Najlepszy wiek to 6-8 lat, jednak kursy są również odpowiednie
+                  dla starszych dzieci. Dzieci w wieku 5 lat i młodsze mogą mieć
+                  trudności z psychomotoryką oraz rozumieniem niektórych zadań.
+                </p>
+              </div>
+            </div>
 
-    </section>
+            <div class="mb-4">
+              <div
+                class="w-full flex justify-between items-center py-3 px-4 bg-gray-200 hover:bg-gray-300 rounded-lg cursor-pointer"
+                onclick="toggleAnswer(this)"
+              >
+                <span class="font-semibold text-gray-700"
+                  >Czy zdarza się, że dzieci kończące kurs nie potrafią pływać?
+                </span>
+                <span class="text-gray-500">+</span>
+              </div>
+              <div class="mt-2 hidden text-gray-600">
+                <p>
+                  Nie, taka sytuacja się nie zdarzyła. Jednak nie można jej
+                  całkowicie wykluczyć. W takim przypadku dziecko powinno
+                  uczęszczać na kolejną edycję kursu
+                </p>
+              </div>
+            </div>
 
-    <!-- <section class="w-[100vw] flex flex-col items-center gap-8">
-      <h3 class="self-start text-3xl">Oferta</h3>
-
-      <div
-        class="w-[80%] h-[50vh] rounded-lg flex flex-col justify-between items-center shadow-xl"
-      >
-        <div
-          class="bg-green-200 w-full h-[55%] bg-[url('./img/photo1.jfif')] bg-cover bg-center rounded-t-lg"
-        ></div>
-        <h4 class="text-2xl"><b>Zajęcia dla dzieci</b></h4>
-        <button
-          class="px-4 py-2 rounded-full mb-[5%] text-white bg-blue-500 font-semibold hover:bg-white hover:text-black hover:font-normal transition-colors border-2 border-blue-500"
-        >
-          dowiedz sie wiecej
-        </button>
-      </div>
-
-      <div
-        class="w-[80%] h-[50vh] rounded-lg flex flex-col justify-between items-center shadow-xl"
-      >
-        <div
-          class="bg-green-200 w-full h-[55%] bg-[url('./img/adult.jpg')] bg-cover bg-center rounded-t-lg"
-        ></div>
-        <h4 class="text-2xl"><b>Zajęcia dla dorosłych</b></h4>
-        <button
-          class="px-4 py-2 rounded-full mb-[5%] text-white bg-blue-500 font-semibold hover:bg-white hover:text-black transition-colors border-2 border-blue-500"
-        >
-          dowiedz sie wiecej
-        </button>
-      </div>
-
-      <div
-        class="w-[80%] h-[50vh] rounded-lg flex flex-col justify-between items-center shadow-xl"
-      >
-        <div
-          class="bg-green-200 w-full h-[55%] bg-[url('./img/swimtrain.jpg')] bg-cover bg-center rounded-t-lg"
-        ></div>
-        <h4 class="text-2xl"><b>Trening i doskonalenie pływania</b></h4>
-        <button
-          class="px-4 py-2 rounded-full mb-[5%] text-white bg-blue-500 font-semibold hover:bg-white hover:text-black transition-colors border-2 border-blue-500"
-        >
-          dowiedz sie wiecej
-        </button>
-      </div>
-
-      <div
-        class="w-[80%] h-[50vh] rounded-lg flex flex-col justify-between items-center shadow-xl"
-      >
-        <div
-          class="bg-green-200 w-full h-[55%] bg-[url('./img/video.jpg')] bg-cover bg-center rounded-t-lg"
-        ></div>
-        <h4 class="text-2xl"><b>Video-Analiza techniki pływania</b></h4>
-        <button
-          class="px-4 py-2 rounded-full mb-[5%] text-white bg-blue-500 font-semibold hover:bg-white hover:text-black transition-colors border-2 border-blue-500"
-        >
-          dowiedz sie wiecej
-        </button>
-      </div>
-
-      <div
-        class="w-[80%] h-[50vh] rounded-lg flex flex-col justify-between items-center shadow-xl"
-      >
-        <div
-          class="bg-green-200 w-full h-[55%] bg-[url('./img/liveguard1.jpg')] bg-cover bg-left rounded-t-lg"
-        ></div>
-        <h4 class="text-2xl"><b>Szkolenia Ratownicze</b></h4>
-        <button
-          class="px-4 py-2 rounded-full mb-[5%] text-white bg-blue-500 font-semibold hover:bg-white hover:text-black transition-colors border-2 border-blue-500"
-        >
-          dowiedz sie wiecej
-        </button>
-      </div>
-    </section> -->
+            <div class="mb-4">
+              <div
+                class="w-full flex justify-between items-center py-3 px-4 bg-blue-200 hover:bg-gray-300 rounded-lg cursor-pointer"
+                onclick="toggleAnswer(this)"
+              >
+                <span class="font-semibold text-black"
+                  >Co obejmuje opłata - zajęcia, kurs, czy umiejętność dziecka?
+                </span>
+                <span class="text-gray-500">+</span>
+              </div>
+              <div class="mt-2 hidden text-gray-600">
+                <p>
+                  Opłata dotyczy przede wszystkim nabycia umiejętności
+                  bezpiecznego i swobodnego pływania na głębokiej wodzie.
+                  Niektóre dzieci uczą się szybciej, inne wolniej, ale
+                  ostatecznie każde z nich osiąga ten cel.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="./js/main.js"></script>
   </body>
