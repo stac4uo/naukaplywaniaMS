@@ -2,6 +2,7 @@ let burgerIcon = document.getElementById('burgerIcon')
 let mobilMenu = document.getElementById('mobileMenu')
 let closeIcon = document.getElementById('closeIcon')
 let main = document.querySelector('main')
+let mobilLi = document.querySelectorAll('.mobile')
 
 
 
@@ -15,6 +16,12 @@ main.classList.toggle('hidden')
 closeIcon.addEventListener('click',()=>{
     mobilMenu.classList.toggle('hidden')
     main.classList.toggle('hidden')
+    })
+
+    mobilLi.forEach(li=>{
+        li.addEventListener('click',()=>{mobilMenu.classList.toggle('hidden')
+            main.classList.toggle('hidden')})
+        
     })
     
 
