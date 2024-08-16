@@ -44,12 +44,14 @@
           alt="logo firmy"
           class="mx-4 h-[90%] w-auto"
         />
+       
         <img
           id="burgerIcon"
           src="./img/burger-bar.png"
           alt="icona menu strony"
-          class="w-[40px] h-[40px] lg:hidden"
+          class="w-[40px] h-[40px] lg:hidden" tabindex="0"
         />
+    
         <ul class="hidden h-[50%] mx-4 lg:flex gap-8 text-lg">
           <li><a href="#metoda">Matoda</a></li>
           <li><a href="#FAQ">FAQ</a></li>
@@ -74,7 +76,7 @@
           Rewolucyjna metoda, która w naturalny sposób rozwija umiejętność
           pływania u dzieci
         </h2>
-        <a href="#kontakt"
+        <a href="./pages/contact/index.html"
           ><button class="ctaButton">Zapisz dziecko na zajecia</button></a
         >
       </section>
@@ -524,7 +526,7 @@
             </svg>
             <p>... umiejętność pływania na całe życie</p>
           </div>
-          <a href="#kontakt"
+          <a href="./pages/contact/index.html"
             ><button class="ctaButton">Zapisz dziecko na zajecia</button></a
           >
         </article>
@@ -913,6 +915,6 @@
       </p>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>

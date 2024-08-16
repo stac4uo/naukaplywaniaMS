@@ -13,10 +13,19 @@ main.classList.toggle('hidden')
 
 })
 
+burgerIcon.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        console.log('klik');
+        mobilMenu.classList.toggle('hidden')
+        main.classList.toggle('hidden')
+    }
+});
 closeIcon.addEventListener('click',()=>{
     mobilMenu.classList.toggle('hidden')
     main.classList.toggle('hidden')
     })
+
+    
 
     mobilLi.forEach(li=>{
         li.addEventListener('click',()=>{mobilMenu.classList.toggle('hidden')
